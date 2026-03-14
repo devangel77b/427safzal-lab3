@@ -1,0 +1,10 @@
+1. This is a review of the manuscript "Investigating the conservation of energy in a spring popper..." by Desai, Afzal, and Modani. I recommend rejection. 
+
+2. The methods are jumbled. The manuscript discusses doing a scissor jack test to measure F vs x; but they are mixed with methods to do launch tests. The launch tests appear to have recorded the max height and used it to back-calculate the velocity at launch using energy conservation, which is circular! You cannot test energy conservation by using energy conservation to compute the velocities to see if they are consistent with energy conservation.
+
+3. The results appear like the F vs x was overfitted to a high order polynomial. The actual height and velocity information is buried in poorly formatted text and no measure of experimental error is given; the authors then handwave in the discussion about a 3.5% difference, uncertain given the method problems above.
+
+4. Discussion has some jewels in it. "The reason inexact equalness is contributed to the nonconservative forces that the energy is lost to, such as heat, friction, and drag". The authors are supposed to sum up here whether their data support their hypotheses (or more precisely, refute alternative hypotheses). These word soup jumbles do not accomplish the job. 
+
+4. One reference is given, to cite the law of conservation of energy. This seems insufficient.
+
