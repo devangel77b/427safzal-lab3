@@ -20,7 +20,7 @@
 
 % set PDF metadata
 \hypersetup{%
-pdftitle={Analysis of Energy Transformation in a Non-Ideal Spring Popper},
+pdftitle={Analysis of energy transformation in a non-ideal spring popper},
 pdfauthor={Sarah Afzal, Ansh Modani, Shreena Desai},
 }
 
@@ -28,8 +28,8 @@ pdfauthor={Sarah Afzal, Ansh Modani, Shreena Desai},
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[RE,RO]{J S\&E \textbf{2}, xx--xx (2026)}
-\fancyhead[LO]{Lennon \emph{et al}}
-\fancyhead[LE]{Analysis of Energy Transformation in a Non-Ideal Spring Popper}
+\fancyhead[LO]{Afzal \emph{et al}}
+\fancyhead[LE]{Analysis of energy transformation in a popper}
 \fancyfoot[C]{\thepage}
 \fancypagestyle{mytitlepage}{
 \fancyhf{}
@@ -45,41 +45,63 @@ pdfauthor={Sarah Afzal, Ansh Modani, Shreena Desai},
 \author{Ansh Modani}
 \author{Shreena Desai}
 \affiliation{Science \& Engineering Magnet Program, \href{https://manalapan.frhsd.com/}{Manalapan High School}, Englishtown, NJ 07726 USA}
-\date{January 30, 2026}
+\date{April x, 2026}
 
 \begin{abstract}
-This experiment looks at how energy is transformed in a spring-loaded toy popper by comparing the work done to compress it with the gravitational potential energy it has at its highest point. Using a scissor jack and a high-precision scale, the work input ($W$) was calculated using the trapezoidal Riemann sum of the force-displacement curve, totaling 0.255 J. Following ten launch trials of the popper, the average maximum height achieved (1.123 m) yielded a gravitational potential energy (GPE) of 0.0616 J. The results indicate a large mechanical energy loss of 75.85\%. This discrepancy is likely due to non-conservative forces, such as internal friction and heat dissipation during the plastic deformation of the popper, as well as aerodynamic drag during flight. This system illustrates the substantial role of energy dissipation in non-ideal mechanical systems such as this one.
+This experiment looks at how energy is transformed in a spring-loaded toy popper by comparing the work done to compress it with the gravitational potential energy it has at its highest point. Using a scissor jack and a high-precision scale, the work input ($W$) was calculated using the trapezoidal Riemann sum of the force-displacement curve, totaling \qty{0.255}{\joule}. Following ten launch trials of the popper, we observed maximum height $h=\qty{1.12\pm0.11}{\meter}$, corresponding to gravitational potential energy (GPE) of \qty{0.062\pm0.006}{\joule}. The results indicate a large mechanical energy loss of \qty{76\pm2}{\percent}. This discrepancy is likely due to non-conservative forces, such as friction or aerodynamic drag during flight. This system illustrates the substantial role of energy dissipation in non-ideal mechanical systems such as this one.
 \end{abstract}
-
 \keywords{forces, energy, popper}
 
 \maketitle
 \thispagestyle{mytitlepage}
 
 \section{Introduction}
-The law of conservation of energy states that energy is neither created nor destroyed, only transformed. However, in most real-life situations, some energy is transferred into forms that are not part of the mechanical energy being measured. In this system, work is performed to compress the popper, storing elastic potential energy. Upon release, this energy converts to kinetic energy and then gravitational potential energy (GPE). This study treats the work input and the potential energy output as independent datasets. If the popper were a perfectly conservative mechanical system, then the work input ($W$) would equal the gravitational potential energy at peak height, because the total mechanical energy would be conserved with no losses. However, in this system, non-conservative processes are expected to reduce the fraction of mechanical energy that is converted into gravitational potential energy. For example, the plastic material of the popper may lose energy to heat when strained, since plastic deformation is a highly dissipative process \cite{sendrowicz2022stored}. Therefore, the measured GPE is expected to be lower than the work input, since not all stored elastic energy is transferred into vertical gravitational potential energy during release.
+The law of conservation of energy states that energy is neither created nor destroyed, only transformed \cite{tipler,barrons,openstax}. However, in most real-life situations, some energy is transferred into forms that are not part of the mechanical energy being measured. 
+
+In our present experiments, we examine energy conservation in small jumping popper toys. Work is performed to compress the popper, storing elastic potential energy. Upon release, this energy converts to kinetic energy and then gravitational potential energy (GPE). This study treats the work input and the potential energy output as independent datasets. We hypothesize that if the popper were a perfectly conservative mechanical system, then the work input ($W$) would equal the gravitational potential energy at peak height, because the total mechanical energy would be conserved with no losses. 
+
+However, in this system, non-conservative processes are expected to reduce the fraction of mechanical energy that is converted into gravitational potential energy. For example, the plastic material of the popper may lose energy to heat when strained, since plastic deformation is a highly dissipative process \cite{sendrowicz2022stored}. Therefore, we consider as an alternative hypothesis that the measured GPE could be lower than the work input, since not all stored elastic energy is transferred into gravitational potential energy during release.
+
+
+
+
 
 \section{Methods and materials}
-The experiment was conducted using a toy popper consisting of a foam head and a plastic body, where the spring is located, of known mass (0.0056 kg), a scissor jack, a video camera, a meter stick, and a high-precision scale. To determine the work performed while the popper was compressed, the scale was placed on the lower surface between the two surfaces of the scissor jack, with the popper on top of the scale. Then, in 0.005 m increments, the top surface of the scissor jack was lowered by turning the knob slowly, which compressed the popper. The mass displayed on the scale was recorded for each increment until the popper was fully compressed and the scissor jack could not be lowered any further. This occurred after a displacement of 0.060 m. At each interval, the mass from the scale was recorded and converted to force ($F$) using the formula $F = mg$. Since work is given by the definite integral of force with respect to displacement, the work done ($W$) was calculated by integrating the area under the force-displacement curve using the trapezoidal Riemann sum:
+The experiment was conducted using a toy popper (``Jumping Gens''; Liberty Imports; Liberty, MO) consisting of a foam head and a plastic body, where the spring is located, a scissor jack, a smartphone for video recording, a meter stick, and a digital scale (TOP2KG; Smart Weigh; Jiangsu, China). The mass of the popper was \qty{0.0056}{\kilo\gram}. 
 
+\subsection{Initial elastic potential energy}
+To determine the work performed while the popper was compressed, the scale was placed on the lower surface between the two surfaces of the scissor jack, with the popper on top of the scale. Then, in \qty{0.005}{\meter} increments, the top surface of the scissor jack was lowered by turning the knob slowly, which compressed the popper. The mass displayed on the scale was recorded for each increment until the popper was fully compressed and the scissor jack could not be lowered any further. This occurred after a displacement of \qty{0.060}{\meter}. At each interval, the mass from the scale was recorded and converted to force ($F=mg$) using $g=\qty{9.8}{\meter\per\second\squared}$ \cite{tipler,barrons,openstax}. Work ($W$) is given by \cite{tipler,barrons,openstax}
 \begin{equation}
-W \approx \frac{\Delta x}{2} \left[ f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n) \right]
+W = \int F dx,
 \end{equation}
+which we approximated by numerically integrating the area under the force-displacement curve using the trapezoidal Riemann sum \cite{calculus,press:1992:numerical}:
+\begin{multline}
+W \approx \frac{\Delta x}{2} \left[ f(x_0) + 2f(x_1) + 2f(x_2) + \cdots \right. \\ 
+\left. + 2f(x_{n-1}) + f(x_n) \right].
+\end{multline}
 
-Once the procedure and calculations to find the work input were completed, another procedure was followed to find the gravitational potential energy of the popper at its maximum height. Two fingers were placed on each side of the popper's foam head to compress it, and then released quickly to trigger launch. At the same time, a meter stick was held in place and a video recording was used to capture the height of the popper. The maximum height ($h$) for each trial was recorded for ten trials. The average height and other summary statistics were then used to determine the final GPE of the system, where GPE is given by:
-
+\subsection{Final gravitational potential energy}
+Once the procedure and calculations to find the work input were completed, another procedure was followed to find the gravitational potential energy (GPE) of the popper at its maximum height. Two fingers were placed on each side of the popper's foam head to compress it, and then released quickly to trigger launch. At the same time, a meter stick was held in place and a video recording was used to capture the height of the popper. The maximum height ($h$) for each trial was recorded for ten trials. The average height and other summary statistics were then used to determine the final GPE of the system, where GPE is given by \cite{tipler,barrons,openstax}:
 \begin{equation}
-GPE = mgh
+GPE = mgh,
+\label{eq:gpe}
 \end{equation}
+where $g=\qty{9.8}{\meter\per\second\squared}$.  
 
 Once the work and gravitational potential energy were calculated, the percentage of energy lost was found to show how much of the input energy was not converted into gravitational potential energy.
+
+
+
+
+
+
 
 \section{Results}
 The force-displacement behavior of the popper during compression is shown in \cref{fig:force-displacement}. The maximum height measurements from the ten launch trials are shown in \cref{tab:height}. A statistical summary of those measurements is shown in \cref{tab:stats}.
 
 \begin{figure}
 \begin{center}
-\includesvg[width=\columnwidth]{figures/Fig1_Force_VS_Displacement_SA_AM_SD}
+\includesvg[width=\columnwidth]{figures/force_vs_displacement}
 \end{center}
 \caption{Force versus displacement of the popper as it is being compressed.}
 \label{fig:force-displacement}
@@ -128,53 +150,61 @@ The force-displacement behavior of the popper during compression is shown in \cr
   \end{center}
 \end{table}
 
-\section{Discussion}
-The total work calculated from the force-displacement data shown in \cref{fig:force-displacement} using the trapezoidal Riemann sum formula was 0.255 J. As shown in \cref{tab:stats}, the average maximum height over ten trials was 1.123 m with a standard deviation of 0.106 m and a standard error of 0.033 m. Plugging the mass, gravitational acceleration ($9.8\,\text{m/s}^2$), and the average height into the gravitational potential energy formula gives a value of 0.0616 J. Comparing the input and output energy shows a large difference:
+The total work calculated from the force-displacement data shown in \cref{fig:force-displacement} using the trapezoidal Riemann sum formula was \qty{0.255}{\joule}. As shown in \cref{tab:stats}, the maximum height over $n=10$ trials was \qty{1.12\pm0.11}{\meter} (mean $\pm$ 1 sd). Using \cref{eq:gpe} gives an estimate of the gravitational potential energy of \qty{0.062\pm0.006}{\joule}.
 
+
+
+
+
+
+\section{Discussion}
+\subsection{Large fraction of the initial elastic stored energy is lost during the launch process}
+Comparing the input and output energy shows a large difference:
 \begin{equation}
 \begin{aligned}
 E_{lost} &= E_{in} - E_{out} \\
-E_{lost} &= 0.255\,\text{J} - 0.0616\,\text{J} = 0.1934\,\text{J}
+E_{lost} &= \qty{0.255}{\joule} - \qty{0.062\pm0.006}{\joule} = \qty{0.193\pm0.006}{\joule}
 \end{aligned}
 \end{equation}
+This corresponds to \qty{76\pm2}{\percent} of the initial elastic potential energy, stored when the popper is compressed, is unaccounted for. 
 
-Correspondingly, this gives the following percentage of energy loss:
+%Correspondingly, this gives the following percentage of energy loss:
+%\begin{equation}
+%\begin{aligned}
+%\%\,\text{Energy Loss} &= \frac{E_{lost}}{E_{in}} \times 100 \\
+%&= \frac{0.1934}{0.255} \times 100 = 75.85\%
+%\end{aligned}
+%\end{equation}
 
-\begin{equation}
-\begin{aligned}
-\%\,\text{Energy Loss} &= \frac{E_{lost}}{E_{in}} \times 100 \\
-&= \frac{0.1934}{0.255} \times 100 = 75.85\%
-\end{aligned}
-\end{equation}
+Some amount of energy loss is expected for a real, non-ideal system and can be explained by several factors. During the compression process, the plastic experiences internal friction as it deforms, which converts some energy into heat. Second, not all motion is perfectly vertical. Most trials resulted in the popper being launched at some angle rather than perfectly straight upward. If the popper tilts or spins, some energy goes into horizontal or rotational motion, neither of which was measured in this experiment. Air resistance also does negative work on the popper as it moves upward.
 
-This is expected for a non-ideal system and can be explained by several factors. During the compression process, the plastic experiences internal friction as it deforms, which converts some energy into heat. Second, not all motion is perfectly vertical. Most trials resulted in the popper being launched at some angle rather than perfectly straight upward. If the popper tilts or spins, some energy goes into horizontal or rotational motion, neither of which was measured in this experiment. Air resistance also does negative work on the popper as it moves upward.
+The force-displacement relationship of the popper does not follow Hooke’s law. Instead, the data show a nonlinear relationship, indicating that the popper does not behave as an ideal linear spring \cite{rohland_hookslaw,tipler,barrons,openstax}. The arrangement of the popper spring as a series of filaments that are free to rub on one another suggests a mechanism of loss due to friction as this nonlinear spring uncompresses. 
+%The observed decrease in force after a peak displacement suggests irreversible deformation and energy dissipation within the material. This behavior is consistent with a non-ideal spring rather than simple linear elasticity, meaning that the system stores and releases energy in a non-conservative manner during compression.
 
-The force-displacement relationship of the popper does not follow Hooke’s law. Instead, the data show a nonlinear relationship, indicating that the popper does not behave as an ideal elastic material \cite{rohland_hookslaw}. The observed decrease in force after a peak displacement suggests irreversible deformation and energy dissipation within the material. This behavior is consistent with a non-ideal spring rather than simple linear elasticity, meaning that the system stores and releases energy in a non-conservative manner during compression.
-
-In addition, it is possible that the percentage of energy lost may be slightly overestimated because of a potential high outlier in the dataset. According to \cref{tab:height}, the sixth trial resulted in a height of 1.410 m. Using the quartile data represented in \cref{tab:stats}, the formula for high outliers gives:
-
-\begin{equation}
-\begin{aligned}
+\subsection{Effect of outlier}
+In addition, it is possible that the percentage of energy lost may be slightly overestimated because of a potential high outlier in the dataset. According to \cref{tab:height}, the sixth trial resulted in a height of \qty{1.410}{\meter}. Using the quartile data represented in \cref{tab:stats}, the formula for high outliers gives \cite{starnes:2015:practice}:
+\begin{align}
 \text{High Outlier} &> Q_3 + (1.5 \times \text{IQR}) \\
 1.410 &> 1.260
-\end{aligned}
-\end{equation}
+\end{align}
 
-Taking this high outlier into account, along with the fact that the mean of 1.123 m is greater than the median of 1.100 m, the data are moderately skewed to the right. However, this does not necessarily mean the value from trial 6 is invalid, only that it is unusually large compared to the rest of the dataset. To determine whether this outlier is statistically significant relative to overall variation, the standard deviation (0.106 m) was used to calculate the z-score:
 
-\begin{equation}
-\begin{aligned}
+Taking this high outlier into account, along with the fact that the mean of \qty{1.123}{\meter} is greater than the median of \qty{1.100}{\meter}, the data are moderately skewed to the right. However, this does not necessarily mean the value from trial 6 is invalid, only that it is unusually large compared to the rest of the dataset. To determine whether this outlier is statistically significant relative to overall variation, the standard deviation (\qty{0.106}{\meter}) was used to calculate the $z$-score, assuming normality \cite{starnes:2015:practice}:
+\begin{align}
 z &= \frac{x-\mu}{\sigma} \\
 z &\approx 2.71
-\end{aligned}
-\end{equation}
+\end{align}
 
-The z-score represents how many standard deviations the maximum height from trial 6 is above the mean. Since values above about 2 standard deviations are generally considered unusually far from the mean, the 1.410 m trial is a statistically significant high deviation. Despite this, the rest of the dataset remains relatively consistent, since the standard deviation (0.106 m) is small compared to the mean height (1.123 m), indicating a moderate spread rather than extreme variability.
+The $z$-score represents how many standard deviations the maximum height from trial 6 is above the mean. Since values above about two standard deviations are generally considered unusually far from the mean, the \qty{1.410}{\meter} trial is a statistically significant high deviation. Despite this, the rest of the dataset remains relatively consistent, since the standard deviation (\qty{0.11}{\meter}) is small compared to the mean height (\qty{1.12}{\meter}), indicating a moderate spread rather than extreme variability.
 
-Overall, the results support the hypothesis that gravitational potential energy is lower than the work input, as a substantial discrepancy of 75.85\% was observed between the calculated work and the measured GPE. This difference indicates that the system is non-conservative, with mechanical energy not fully transferring into gravitational potential energy. This is likely due to multiple non-conservative processes, including internal energy dissipation during plastic deformation of the popper and aerodynamic drag. While the exact contribution of each mechanism was not directly measured, the magnitude of the difference suggests significant energy transformation into forms that are not mechanical.
+Overall, the results support the hypothesis that gravitational potential energy is lower than the work input, as a substantial discrepancy of \qty{76\pm2}{\percent} was observed between the calculated work and the measured GPE. This difference indicates that the system is non-conservative, with mechanical energy not fully transferring into gravitational potential energy. This is likely due to multiple non-conservative processes, including friction, internal energy dissipation during deformation of the popper, and aerodynamic drag. While the exact contribution of each mechanism was not directly measured, the magnitude of the difference suggests significant energy transformation into forms that are not mechanical.
+
+
+
+
 
 \section{Acknowledgements}
-We thank Dr. E for his guidance and support throughout the experiment. S. Afzal developed the hypothesis, calculated data, and created graphs for evaluation of that hypothesis. A. Modani physically performed much of the experiment by operating the scissor jack, and S. Desai helped capture measurements such as the mass and displacement.
+SA developed the hypothesis, calculated data, and created graphs for evaluation of that hypothesis. AM performed much of the experiment by operating the scissor jack, and SD helped capture measurements such as the mass and displacement.
 
 \bibliography{afzal.bib}
 
