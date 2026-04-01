@@ -74,21 +74,21 @@ To determine the work performed while the popper was compressed, the scale was p
 \begin{equation}
 W = \int F dx,
 \end{equation}
-which we approximated by numerically integrating the area under the force-displacement curve using the trapezoidal Riemann sum \cite{calculus,press:1992:numerical}:
+which we approximated by numerically integrating the area under the force-displacement curve using the trapezoidal Riemann sum \cite{calculus,press:1992:numerical,numpy,matplotlib}:
 \begin{multline}
 W \approx \frac{\Delta x}{2} \left[ f(x_0) + 2f(x_1) + 2f(x_2) + \cdots \right. \\ 
 \left. + 2f(x_{n-1}) + f(x_n) \right].
 \end{multline}
 
 \subsection{Final gravitational potential energy}
-Once the procedure and calculations to find the work input were completed, another procedure was followed to find the gravitational potential energy (GPE) of the popper at its maximum height. Two fingers were placed on each side of the popper's foam head to compress it, and then released quickly to trigger launch. At the same time, a meter stick was held in place and a video recording was used to capture the height of the popper. The maximum height ($h$) for each trial was recorded for ten trials. The average height and other summary statistics were then used to determine the final GPE of the system, where GPE is given by \cite{tipler,barrons,openstax}:
+Once the procedure and calculations to find the work input were completed, another procedure was followed to find the gravitational potential energy (GPE) of the popper at its maximum height. Two fingers were placed on each side of the popper's foam head to compress it, and then released quickly to trigger launch. At the same time, a meter stick was held in place and a video recording was used to capture the height of the popper. The maximum height ($h$) for each trial was recorded for ten trials. The average height and other summary statistics were then used to determine the final GPE of the system, where GPE is given by \cite{tipler,barrons,openstax,R}:
 \begin{equation}
 GPE = mgh,
 \label{eq:gpe}
 \end{equation}
 where $g=\qty{9.8}{\meter\per\second\squared}$.  
 
-Once the work and gravitational potential energy were calculated, the percentage of energy lost was found to show how much of the input energy was not converted into gravitational potential energy.
+Once the work and gravitational potential energy were calculated, the percentage of energy lost was found to show how much of the input energy was not converted into gravitational potential energy. Raw data and analysis code are available at \url{https://github.com/devangel77b/427safzal-lab3}.
 
 
 
