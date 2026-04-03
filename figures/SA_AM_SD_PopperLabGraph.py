@@ -9,7 +9,7 @@ y = [0.071, 1.47, 2.94, 4.41, 5.70, 7.35, 8.57, 7.48, 6.18, 5.53, 4.24, 4.66, 4.
 
 # Plot
 plt.figure(figsize=(3.4167, 2),dpi=600)
-plt.plot(x, y, marker='o',markersize=8)
+plt.plot(x, y, marker='o',markersize=4.2)
 plt.xlabel(r'displacement, \unit{\meter}')
 plt.ylabel(r'force, \unit{\newton}')
 plt.grid(True)
