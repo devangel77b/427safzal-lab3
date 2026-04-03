@@ -83,7 +83,7 @@ W \approx \frac{\Delta x}{2} \left[ f(x_0) + 2f(x_1) + 2f(x_2) + \cdots \right. 
 \subsection{Final gravitational potential energy}
 Once the procedure and calculations to find the work input were completed, another procedure was followed to find the gravitational potential energy (GPE) of the popper at its maximum height. Two fingers were placed on each side of the popper's foam head to compress it, and then released quickly to trigger launch. At the same time, a meter stick was held in place and a video recording was used to capture the height of the popper. The maximum height ($h$) for each trial was recorded for ten trials. The average height and other summary statistics were then used to determine the final GPE of the system, where GPE is given by \cite{tipler,barrons,openstax,R}:
 \begin{equation}
-GPE = mgh,
+\text{GPE} = mgh,
 \label{eq:gpe}
 \end{equation}
 where $g=\qty{9.8}{\meter\per\second\squared}$.  
@@ -112,9 +112,9 @@ The force-displacement behavior of the popper during compression is shown in \cr
   \label{tab:height}
   \begin{center}
     \begin{ruledtabular}
-      \begin{tabular}{cc}
-        trial & height, \unit{\meter} \\
-        \colrule
+      \begin{tabular}{SS}
+        {trial} & {height, \unit{\meter}} \\
+        \colrule \\
         1 & \num{1.14} \\
         2 & \num{1.15} \\
         3 & \num{1.05} \\
@@ -135,9 +135,9 @@ The force-displacement behavior of the popper during compression is shown in \cr
   \label{tab:stats}
   \begin{center}
     \begin{ruledtabular}
-      \begin{tabular}{cc}
-        quantity & value, \unit{\meter} \\
-        \colrule
+      \begin{tabular}{cS}
+        quantity & {value, \unit{\meter}} \\
+        \colrule \\
         mean & \num{1.123} \\
         median & \num{1.100} \\
         standard deviation & \num{0.106} \\
@@ -184,7 +184,7 @@ The force-displacement relationship of the popper does not follow Hooke’s law.
 \subsection{Effect of outlier}
 In addition, it is possible that the percentage of energy lost may be slightly overestimated because of a potential high outlier in the dataset. According to \cref{tab:height}, the sixth trial resulted in a height of \qty{1.410}{\meter}. Using the quartile data represented in \cref{tab:stats}, the formula for high outliers gives \cite{starnes:2015:practice}:
 \begin{align}
-\text{High Outlier} &> Q_3 + (1.5 \times \text{IQR}) \\
+\text{high outlier} &> Q_3 + (1.5 \times \text{IQR}) \\
 1.410 &> 1.260
 \end{align}
 
