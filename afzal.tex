@@ -16,7 +16,11 @@
 \crefname{figure}{Fig.}{Figs.}
 \crefname{table}{Table}{Tables}
 \usepackage{svg}
-\svgpath{{../figures/}}
+\svgpath{{./figures/}}
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+
 
 % set PDF metadata
 \hypersetup{%
@@ -35,7 +39,7 @@ pdfauthor={Sarah Afzal, Ansh Modani, Shreena Desai},
 \fancyhf{}
 \fancyhead[C]{Journal of Science \& Engineering \textbf{2}, 98--100 (2026)}
 \fancyfoot[C]{\thepage}
-\fancyfoot[L]{\scriptsize\copyright\ 2026 Journal of Science \& Engineering, \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
+\fancyfoot[L]{\scriptsize\copyright\ 2026 J S\&E \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
 }
 
 \begin{document}
@@ -47,8 +51,9 @@ pdfauthor={Sarah Afzal, Ansh Modani, Shreena Desai},
 \author{Ansh Modani}
 \author{Shreena Desai}
 \affiliation{Science \& Engineering Magnet Program, \href{https://manalapan.frhsd.com/}{Manalapan High School}, Englishtown, NJ 07726 USA}
-\date{Received x; revised x; accepted x}
-\published{13 May 2026}
+\received{30 January 2026}
+\accepted[accepted~]{31 March 2026}
+\published[published~]{13 May 2026}
 
 \begin{abstract}
 This experiment looks at how energy is transformed in a spring-loaded toy popper by comparing the work done to compress it with the gravitational potential energy it has at its highest point. Using a scissor jack and a high-precision scale, the work input ($W$) was calculated using the trapezoidal Riemann sum of the force-displacement curve, totaling \qty{0.255}{\joule}. Following ten launch trials of the popper, we observed maximum height $h=\qty{1.12\pm0.11}{\meter}$, corresponding to gravitational potential energy (GPE) of \qty{0.062\pm0.006}{\joule}. The results indicate a large mechanical energy loss of \qty{76\pm2}{\percent}. This discrepancy is likely due to non-conservative forces, such as friction or aerodynamic drag during flight. This system illustrates the substantial role of energy dissipation in non-ideal mechanical systems such as this one.
@@ -60,6 +65,7 @@ This experiment looks at how energy is transformed in a spring-loaded toy popper
 
 \maketitle
 \thispagestyle{mytitlepage}
+\blfootnote{\\\emph{Published by the Journal of Science \& Engineering under the terms of the \href{https://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons Attribution-NonCommercial 4.0 International} license. Further distribution of this work must maintain attribution to the author(s) and the published article's title, journal citation, and DOI.}}
 
 \section{Introduction}
 The law of conservation of energy states that energy is neither created nor destroyed, only transformed \cite{tipler,barrons,openstax}. However, in most real-life situations, some energy is transferred into forms that are not part of the mechanical energy being measured. 
